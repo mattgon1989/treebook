@@ -13,10 +13,13 @@
 			   		<a href= "#" class="brand"> treebook</a>
 		   		<il class= "nav">
 					<li><%= link_to "All Statuses" , statuses_path %></li>
+					<li><%= link_to "New status" , new_status_path %>
 				</div>
 	   	   </div>
 	  </div>
 	<div class="container">
+		<p class="notice"><%= notice %></p>
+		       <p class="alert"><%= alert %></p>
 <%= yield %>
 	</div>
 </body>
